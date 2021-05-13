@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Whether it will rain</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Get the updated weather information for anywhere in the world!</p>
+        <form>
+            <input id="address" placeholder="Location" autofocus>
+            <button>Search</button>
+        </form>
+        <p id="forecast"></p>
+        <br>
+        <pre id="json"></pre>
+    </div>
+
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
